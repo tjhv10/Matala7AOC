@@ -1,0 +1,8 @@
+0x00400000 		addi $s4, $0, 9029
+0x00400004 		sub $t3, $s4, $k1
+0x00400008 		beq $t3, $s4, label1
+0x0040000C 		sll $t3, $s2, 16
+0x00400010 		j label1
+0x00400014 		label1: bne $s1, $s5, label2
+0x00400018 		sllv $s3, $s5, $s7
+0x0040001C		label2:
